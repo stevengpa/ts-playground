@@ -3,17 +3,14 @@
   "tabWidth": 2,
   "semi": true,
   "singleQuote": true,
+  "printWidth": 120,
+  "bracketSpacing": true,
   "overrides": [
     {
-      "files": "*.test.ts",
+      "files": ["*.html", "src/**/*.ts", "*.test.ts", "*.tsx", "*.test.js", "src/**/*.js","src/**/*.jsx"],
       "options": {
+        "tabWidth": 2,
         "semi": true
-      }
-    },
-    {
-      "files": ["*.html", "src/**/*.ts"],
-      "options": {
-        "tabWidth": 2
       }
     }
   ]

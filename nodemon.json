@@ -1,6 +1,7 @@
 {
   "watch": ["src"],
+  "verbose": false,
   "ext": ".ts",
-  "ignore": [],
+  "ignore": [".git", "node_modules", ".idea", ".vscode"],
   "exec": "ts-node ./src/app.ts"
 }
