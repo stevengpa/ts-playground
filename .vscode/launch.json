@@ -1,0 +1,44 @@
+{
+  "configurations": [
+    {
+      "type": "node",
+      "name": "jest-run.v2",
+      "request": "launch",
+      "args": [
+        "run",
+        "test",
+        "--",
+        "--runInBand",
+        "--watchAll=false",
+        "--testNamePattern",
+        "${jest.testNamePattern}",
+        "--runTestsByPath",
+        "${jest.testFile}"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "runtimeExecutable": "npm",
+    },
+    {
+      "type": "node",
+      "name": "jest-watch.v2",
+      "request": "launch",
+      "args": [
+        "run",
+        "test",
+        "--",
+        "--runInBand",
+        "--watch=true",
+        "--testNamePattern",
+        "${jest.testNamePattern}",
+        "--runTestsByPath",
+        "${jest.testFile}"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "runtimeExecutable": "npm"
+    }
+  ]
+}

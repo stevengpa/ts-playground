@@ -1,0 +1,7 @@
+{
+  "jest.jestCommandLine": "npm run test --",
+  "jest.debugMode": true,
+  // "jest.autoRun": "off",
+  "jest.autoRun": "watch",
+  "jest.showCoverageOnLoad": true
+}
